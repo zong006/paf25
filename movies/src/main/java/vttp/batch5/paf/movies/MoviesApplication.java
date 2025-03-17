@@ -24,7 +24,7 @@ public class MoviesApplication implements CommandLineRunner{
 		
 		ApplicationArguments cliOpts = new DefaultApplicationArguments(args);
 		// cliOpts.getOptionNames().forEach(x -> System.out.println(x));
-		String filePath = "../data/movies_post_2010.zip";
+		String filePath = "data/movies_post_2010.zip";
 		if (cliOpts.containsOption("file")){
 			
 			filePath = cliOpts.getOptionValues("file").get(0);
