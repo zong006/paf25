@@ -23,6 +23,7 @@
     ARG DEPLOY_DIR=/app
     
     WORKDIR ${DEPLOY_DIR}
+    COPY --from=compiler /code_folder/data data
     COPY --from=compiler /code_folder/target/movies-0.0.1-SNAPSHOT.jar movies.jar
     
     
