@@ -53,7 +53,7 @@ public class MySQLMovieRepository {
 
   public int getEntryCount(){
     String SQL_GET_COUNT = """
-        SELECT count(*) as entries from paf25.imdb i ;
+        SELECT count(*) as entries from imdb i ;
         """;
 
     SqlRowSet rs = template.queryForRowSet(SQL_GET_COUNT);
