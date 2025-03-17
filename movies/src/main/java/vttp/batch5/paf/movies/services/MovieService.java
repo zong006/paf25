@@ -195,7 +195,7 @@ public class MovieService {
     Map<String, Object> params = new HashMap<>();
     params.put("DIRECTOR_TABLE_DATASET", directorDS);
 
-    JasperReport report = JasperCompileManager.compileReport("src/main/resources/static/director_movies_report.jrxml");
+    JasperReport report = JasperCompileManager.compileReport("data/director_movies_report.jrxml");
     JasperPrint print = JasperFillManager.fillReport(report, params, reportDS);
 
     JRPdfExporter exporter = new JRPdfExporter();
